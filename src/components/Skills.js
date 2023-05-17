@@ -99,9 +99,7 @@ export const Skills = () => {
               <Row className="d-flex justify-content-center align-items-center  ">
                 {progressBarData.map((data, index) => (
                   <Col
-                    xs={4}
-                    md={4}
-                    xl={3}
+                  xs={6} md={4} xl={3}
                     key={index}
                     className="  mt-5 mb-3 d-flex justify-content-center align-items-center"
                   >
