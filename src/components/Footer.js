@@ -17,9 +17,9 @@ return(
                 </Col>
                 <Col sm={6} className="text-center text-sm-end">
                     <div className="social-icon">
-                        <a href=""><img src={navIcon1}></img> </a>
-                        <a href=""><img src={navIcon2}></img> </a>
-                        <a href=""><img src={navIcon3}></img> </a>
+                        <a href="#"><img src={navIcon1} alt="icono"></img> </a>
+                        <a href="#"><img src={navIcon2} alt="icono"></img> </a>
+                        <a href="#"><img src={navIcon3} alt="icono"></img> </a>
 
                     </div>
                     <p>CopyRight 2023</p>

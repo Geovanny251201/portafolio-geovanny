@@ -1,10 +1,9 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import { useState, useEffect } from "react";
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
+
 import { AiFillGithub } from "react-icons/ai";
 import {ButtonPdf} from './ButtonPdf';
 

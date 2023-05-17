@@ -1,9 +1,7 @@
 import { Col, Row, Container } from "react-bootstrap";
-import Carousel from "react-multi-carousel";
+
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+
 import colorSharp from "../assets/img/color-sharp.png";
 
 
@@ -20,17 +18,14 @@ import { MicrosoftsqlserverPlainWordmark } from 'devicons-react';
 import { SqliteOriginal } from 'devicons-react';
 
 import React, { useState } from "react";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+
 import "react-circular-progressbar/dist/styles.css";
 
-import AnimatedProgressProvider from "./AnimatedProgressProvider";
-import { easeQuadInOut } from "d3-ease";
-import { Progress } from "./Progress";
-import VisibilitySensor from "react-visibility-sensor";
-import { isVisible } from "@testing-library/user-event/dist/utils";
-import { InView } from "react-intersection-observer";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Progress } from "./Progress";
+
+
+
 
 export const Skills = () => {
   const skills = {

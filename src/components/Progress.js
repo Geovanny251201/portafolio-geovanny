@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 export  const Progress = ({ progress,isActive }) => {
   const containerRef = useRef(null);
   const circleBarRef = useRef(null);
-  const [restart,setRestart]=useState(false)
+
 
   useEffect(() => {
     if (isActive) {
