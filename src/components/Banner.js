@@ -22,7 +22,7 @@ export const Banner = () => {
                 }
               >
                 <span className="tagline">Bienvenido(a) a mi portafolio</span>
-                <h1>
+                <h1 className="text-sm">
                   Hola, soy Geovanny Araya
                   <Typewriter
                   options={{
