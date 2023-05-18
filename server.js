@@ -64,9 +64,9 @@ router.post("/contact", (req, res) => {
 // Ruta para descargar un archivo PDF
 app.get('/download', (req, res) => {
   const fileName = req.query.file;
-  const filePath = path.join(__dirname, 'pdfs', fileName);
+  const fileUrl = `https://nombre-de-tu-sitio.netlify.app/pdfs/${fileName}`;
 
-  res.download(filePath, fileName, (err) => {
+  res.download(fileUrl, fileName, (err) => {
     if (err) {
       console.log('Error al descargar el archivo:', err);
       res.status(500).send('Error al descargar el archivo.');
