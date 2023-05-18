@@ -7,15 +7,13 @@ export const ButtonPdf = () => {
  
 
   const downloadFile = () => {
-    window.open('https://geovanny-portafolio.netlify.app/api/download?file=cv.pdf', '_blank');
+    window.open('http://geovanny-portafolio.netlify.app/download?file=cv.pdf', '_blank');
   }
 
   return (
     
- <button className='buttonPdf text-white ' >
-      <span> <a href="https://geovanny-portafolio.netlify.app/api/download?file=cv.pdf" download>
-      Descargar CV
-    </a></span>
+ <button className='buttonPdf text-white ' onClick={downloadFile}>
+      <span> Descargar CV</span>
   </button>   
     
     

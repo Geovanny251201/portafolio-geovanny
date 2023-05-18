@@ -68,7 +68,7 @@ app.use((req, res, next) => {
 // Ruta para descargar un archivo
 
 // Ruta para descargar un archivo PDF
-app.get('/api/download', (req, res) => {
+app.get('/download', (req, res) => {
   const fileName = req.query.file;
   const filePath = path.join(__dirname, 'pdfs', fileName);
 
