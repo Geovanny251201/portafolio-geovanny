@@ -12,8 +12,10 @@ export const ButtonPdf = () => {
 
   return (
     
- <button className='buttonPdf text-white ' onClick={downloadFile}>
-      <span> Descargar CV</span>
+ <button className='buttonPdf text-white ' >
+      <span> <a href="https://geovanny-portafolio.netlify.app/api/download?file=cv.pdf" download>
+      Descargar CV
+    </a></span>
   </button>   
     
     
