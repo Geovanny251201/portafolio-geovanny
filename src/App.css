@@ -276,7 +276,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
  }
  
- .buttonPdf span {
+ .buttonPdf a {
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -289,9 +289,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: all 0.3s ease-in-out;
  }
  
- .buttonPdf:hover span {
-  color: #f4f4f4;
+ .buttonPdf:hover a {
+  color: #f4f4f4 !important;
   animation: scaleUp 0.3s ease-in-out;
+  text-decoration: none;
  }
  
  @keyframes scaleUp {

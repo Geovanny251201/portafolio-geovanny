@@ -12,9 +12,9 @@ export const ButtonPdf = () => {
 
   return (
     
- 
-     <a href={CV} download='CV-Geo' className='btn'> Download CV</a>
-  
+ <button className='buttonPdf text-white'>
+     <a href={CV} download='CV-Geo' className='btn'> Descargar CV</a>
+  </button>   
     
     
   );
