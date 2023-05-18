@@ -1,0 +1,7 @@
+[build]
+  command = "npm run build" # Comando para compilar tu aplicación React
+
+[[redirects]] # Redirección para todas las rutas a server.js
+  from = "/*"
+  to = "/server.js"
+  status = 200
