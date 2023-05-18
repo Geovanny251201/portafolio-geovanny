@@ -6,7 +6,7 @@ export const ButtonPdf = () => {
  
 
   const downloadFile = () => {
-    window.open('http://localhost:4000/download?file=cv.pdf', '_blank');
+    window.open('https://geovanny-portafolio.netlify.app/download?file=cv.pdf', '_blank');
   }
 
   return (
