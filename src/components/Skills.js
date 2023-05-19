@@ -91,7 +91,7 @@ export const Skills = () => {
         <Row >
           <Col>
             <div className="skill-bx ">
-              <h2>Habilidades </h2>
+              <h2  className="text-variant">Habilidades </h2>
              
 
               <p >Tecnologías que he utilizado. </p>
