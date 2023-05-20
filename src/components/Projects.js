@@ -3,6 +3,10 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import pokedexCapture from "../assets/img/poke.png";
+import listaTareas from "../assets/img/listaTareas .png";
+
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -12,14 +16,12 @@ export const Projects = () => {
     {
       title: "Pokedex",
       description: "https://geovanny251201.github.io/pokemonProyect/",
-      imgUrl:
-        "https://api.screenshotmachine.com?key=c0da3d&url=https://geovanny251201.github.io/pokemonProyect/&dimension=1024x768&delay=5000&cacheLimit=0",
+      imgUrl:pokedexCapture,
     },
     {
       title: "Lista de Tareas",
       description: "https://geovanny251201.github.io/react-page-example/",
-      imgUrl:
-        "https://api.screenshotmachine.com?key=c0da3d&url=https://geovanny251201.github.io/react-page-example/&dimension=1024x768&delay=5000&cacheLimit=0",
+      imgUrl:listaTareas,
     },
     {
       title: "Lista de Tareas",
