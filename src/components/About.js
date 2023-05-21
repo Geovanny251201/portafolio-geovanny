@@ -19,7 +19,7 @@ export const About = () => {
       <div className=" row ">
     
         <div className="col-xl-4 col-md-4 col-sm-6 d-flex justify-content-center align-items-center">
-          <div className="tarjetaFoto mt-2 mb-2 d-flex justify-content-center">
+          <div className="tarjetaFoto mt-2 mb-2 d-flex justify-content-center align-items-center">
             <img className="foto" src={fotoPerfil} alt="" />
           </div>
         </div>
@@ -30,7 +30,7 @@ export const About = () => {
               <label className="tarjetaInput text-center ">
                  <Typewriter
                   options={{
-                  strings: ['¿Who is Geovanny Araya?'],
+                  strings: ['¿Quién es Geovanny Araya?'],
                   autoStart: true,
                   loop: true,
                   }}
@@ -50,7 +50,7 @@ export const About = () => {
             </div>
             <div className='col-10'>
             <div className="tarjetaInfo mt-5">
-              <p>I am enthusiastic junior front-end web developer currently undergoing university education. My great motivation is to learn and continue growing in this digital world, offering my commitment and teamwork skills to achieve great projects and innovative solutions. I consider myself a creative and proactive person, always ready to face new challenges and acquire new skills to further improve in my career.</p>
+              <p>Soy un entusiasta desarrollador web front-end júnior que actualmente está cursando estudios universitarios. Mi gran motivación es aprender y seguir creciendo en este mundo digital, ofreciendo mi compromiso y capacidad de trabajo en equipo para lograr grandes proyectos y soluciones innovadoras. Me considero una persona creativa y proactiva, siempre lista para enfrentar nuevos desafíos y adquirir nuevas habilidades para seguir mejorando en mi carrera.</p>
             </div>
             </div>
             <div className='col-1'>
@@ -63,7 +63,7 @@ export const About = () => {
               <div className="tarjeta mt-3">
                 <div className="row">
                   <div className="col-12">
-                    <h4 className="text-center text-white mt-2">Languages</h4>
+                    <h4 className="text-center text-white mt-2">Idiomas</h4>
                   </div>
                 </div>
                 <div className='row d-flex justify-content-center'>
@@ -72,8 +72,8 @@ export const About = () => {
                 </div>
                 <div className="row">
                   <div className="col-12 text-center mt-4">
-                    <h6>English Level B1</h6>
-                    <h6>Spanish Native</h6>
+                    <h6>Inglés Nivel B1</h6>
+                    <h6>Español Nativo</h6>
                   </div>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export const About = () => {
               <div className="tarjeta mt-3">
                 <div className="row">
                   <div className="col-12">
-                    <h4 className="text-center text-white mt-2">Education</h4>
+                    <h4 className="text-center text-white mt-2">Educación</h4>
                   </div>
                 </div>
                 <div className='row d-flex justify-content-center'>
@@ -91,7 +91,7 @@ export const About = () => {
                 </div>
                 <div className="row">
                   <div className="col-12 text-center mt-4">
-                    <h6>2020-Current | Systems Engineer in<br />Universidad de Costa Rica</h6>
+                    <h6>2020-Actualidad | Ingeniero en sistemas en<br />Universidad de Costa Rica</h6>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@ export const About = () => {
               <div className="tarjeta mt-3">
                 <div className="row">
                   <div className="col-12">
-                    <h4 className="text-center text-white mt-2">Soft Skills</h4>
+                    <h4 className="text-center text-white mt-2">Habilidades Blandas</h4>
                   </div>
                 </div>
                 <div className='row d-flex justify-content-center'>
@@ -111,14 +111,14 @@ export const About = () => {
                   <div className="col-12 text-center mt-4 ">
                     <div className="row">
                       <div className="col-6">
-                        <h6>Creativity</h6>
-                        <h6>Patience</h6>
-                        <h6>Collaboration</h6>
+                        <h6>Creatividad</h6>
+                        <h6>Paciencia</h6>
+                        <h6>Colaboración</h6>
                       </div>
                       <div className="col-6">
-                        <h6>Team Work</h6>
-                        <h6>Proactive</h6>
-                        <h6>Flexibility</h6>
+                        <h6>Trabajo en equipo</h6>
+                        <h6>Proactivo</h6>
+                        <h6>Flexibilidad</h6>
                       </div>
                     </div>
                   </div>

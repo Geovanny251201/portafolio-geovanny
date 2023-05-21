@@ -1075,7 +1075,7 @@ color:gray;
  .tarjetaFoto {
   width: 300px;
   height: 400px;
-  border-radius: 30px;
+  border-radius: 50px;
   background: #212121;
   box-shadow: 15px 15px 30px rgb(25, 25, 25),
               -15px -15px 30px rgb(60, 60, 60);
@@ -1111,6 +1111,17 @@ color:gray;
     font-size: 15px;
    
   }
+  .tarjetaFoto {
+    width: 200px;
+    height: 230px;
+    border-radius: 20px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+                
+    
+  
+   }
 }
  .tarjetaInput{
   width: 60%;
