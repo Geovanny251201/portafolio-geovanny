@@ -6,6 +6,7 @@ import { Skills} from './components/Skills';
 import {Projects} from './components/Projects';
 import {Contact} from './components/Contact';
 import {Footer} from './components/Footer';
+import {About} from  './components/About';
 
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <Banner></Banner>
+      <About></About>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
