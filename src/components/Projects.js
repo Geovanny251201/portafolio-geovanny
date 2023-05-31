@@ -66,19 +66,7 @@ export const Projects = () => {
               )}
             </TrackVisibility>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Row>
-                <Col xl={12} className="btn2">
-                <strong>Sección 1</strong>
-                <div id="container-stars">
-                  <div id="stars"></div>
-                </div>
-                
-                <div id="glow">
-                  <div class="circle"></div>
-                  <div class="circle"></div>
-                </div>
-                </Col>
-              </Row>
+        
             
               <Tab.Content>
                 <Tab.Pane eventKey="first">
