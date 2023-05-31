@@ -2,10 +2,16 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from 'emailjs-com';
 import { useEffect, useRef } from 'react'
+import Swal from 'sweetalert2';
+import '@sweetalert2/theme-dark';
 
 import developerSend from "../assets/img/developerSend.png";
 
 export const Contact = () => {
+
+  const sweetAlert = () => {
+    Swal.fire('Mensaje Enviado', '¡Muchas gracias! Me pondré en contacto contigo muy pronto 😉', 'success','dark');
+  };
   const form = useRef();
 
   function sendEmail(e) {
@@ -15,6 +21,7 @@ export const Contact = () => {
       .then((result) => {
         console.log(result.text);
         setButtonText("Enviar");
+        sweetAlert();
       }, (error) => {
         console.log(error.text);
       });
@@ -116,6 +123,7 @@ export const Contact = () => {
           <textarea name="message" rows="7" placeholder='Mensaje' required></textarea>
           <button type='submit' className='btn btn-primary'><span>{buttonText}</span></button>
         </form>
+       
 
           </Col>
         </Row>
