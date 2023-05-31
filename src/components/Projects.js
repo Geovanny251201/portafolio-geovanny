@@ -5,6 +5,8 @@ import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import pokedexCapture from "../assets/img/poke.png";
 import listaTareas from "../assets/img/listaTareas .png";
+import coffeeApp from "../assets/img/coffeeApp.jpg";
+
 
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -26,7 +28,7 @@ export const Projects = () => {
     {
       title: "Lista de Tareas",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: coffeeApp,
     },
     {
       title: "Business Startup",
