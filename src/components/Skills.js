@@ -148,7 +148,7 @@ export const Skills = () => {
               <Row className="d-flex justify-content-center align-items-center">
               <Slider {...settings}>
                       {desarrolloLenguajes.map((item, index) => (
-                      <div key={index}>
+                      <div key={index} className="carousel-item">
                             {item.icon}
                         <h3>{item.skill}</h3>
                      </div>
@@ -157,7 +157,7 @@ export const Skills = () => {
                <p>Frameworks</p>
                <Slider {...settings2}>
                       {frameworks.map((item, index) => (
-                      <div key={index}>
+                      <div key={index} className="carousel-item">
                             {item.icon}
                         <h3>{item.skill}</h3>
                      </div>

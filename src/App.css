@@ -453,6 +453,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 600;
 }
 
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item h3 {
+  font-size: 18px;
+}
+
+/* Media query para pantallas de teléfono */
+@media (max-width: 767px) {
+  .carousel-item h3 {
+    font-size: 14px; /* Ajusta el tamaño del texto para pantallas de teléfono */
+  }
+}
+
 
 
 
