@@ -121,7 +121,7 @@ export const Contact = () => {
           <input type="text" name='organization' placeholder='Organización' required />
           <input type="email" name='email' placeholder='Correo Electrónico' required />
           <textarea name="message" rows="7" placeholder='Mensaje' required></textarea>
-          <button type='submit' className='btn btn-primary'><span>{buttonText}</span></button>
+          <button type='submit'><span>{buttonText}</span></button>
         </form>
        
 
