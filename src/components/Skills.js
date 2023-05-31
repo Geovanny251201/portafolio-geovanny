@@ -1,45 +1,52 @@
 import { Col, Row, Container } from "react-bootstrap";
-
 import "react-multi-carousel/lib/styles.css";
-
 import colorSharp from "../assets/img/color-sharp.png";
-
-
-import { JavascriptOriginal } from 'devicons-react';
-import { ReactOriginal } from 'devicons-react';
-import { Html5Original } from 'devicons-react';
-import { Css3Original } from 'devicons-react';
-import { NodejsOriginal } from 'devicons-react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { JavascriptOriginal } from "devicons-react";
+import { ReactOriginal } from "devicons-react";
+import { Html5Original } from "devicons-react";
+import { Css3Original } from "devicons-react";
 import { BootstrapOriginal } from 'devicons-react';
-import { KotlinOriginal } from 'devicons-react';
-import { CsharpOriginal } from 'devicons-react';
-import { DotnetcoreOriginal } from 'devicons-react';
-import { MicrosoftsqlserverPlainWordmark } from 'devicons-react';
-import { SqliteOriginal } from 'devicons-react';
-
-import React, { useState } from "react";
-
+import { KotlinOriginal } from "devicons-react";
+import { CsharpOriginal } from "devicons-react";
+import { DotnetcoreOriginal } from "devicons-react";
+import { SqliteOriginal } from "devicons-react";
+import { JavaOriginal } from 'devicons-react';
+import { JqueryOriginal } from 'devicons-react';
+import React from "react";
 import "react-circular-progressbar/dist/styles.css";
-
-
-import { Progress } from "./Progress";
-
-
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export const Skills = () => {
-  const skills = {
-    html5: 80,
-    css: 70,
-    javascript: 90,
-    kotlin: 60,
-    csharp: 50,
-    bootstrap: 75,
-  };
-
+ 
+    const settings = {
+      dots: true,
+      infinite: true,
+      arrows:false,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      slidesToShow: 3,
+      slidesToScroll: 1
+    };
+    const settings2 = {
+      dots: true,
+      arrows: false,
+      infinite: true,
+      speed: 2000,
+      autoplay: true,
+      autoplaySpeed: 0,
+      cssEase: 'linear',
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      rtl: true // Configuración para cambiar la dirección de desplazamiento
+    };
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -56,74 +63,114 @@ export const Skills = () => {
       items: 1,
     },
   };
-  const [progress, setProgress] = useState(0.7);
 
-  const progressBarData = [
-    { progress: 0.5, isActive: true, skill: "JavaScript", icon: <JavascriptOriginal color="red" size="30"  /> },
-    { progress: 0.4, isActive: true, skill: "React",icon: <ReactOriginal  size="40"  /> },
-    { progress: 0.7, isActive: true, skill: "HTML5",icon: <Html5Original  size="40"  /> },
-    { progress: 0.7, isActive: true, skill: "CSS",icon: <Css3Original  size="40"  /> },
-    { progress: 0.3, isActive: true, skill: "Node JS",icon: <NodejsOriginal  size="40"  /> },
-    { progress: 0.5, isActive: true, skill: "BootStrap",icon: <BootstrapOriginal  size="35"  /> },
-    { progress: 0.5, isActive: true, skill: "Kotlin",icon: <KotlinOriginal  size="35"  /> },
-    { progress: 0.4, isActive: true, skill: "C#",icon: <CsharpOriginal  size="40"  /> },
-    { progress: 0.4, isActive: true, skill: ".Net Core",icon: <DotnetcoreOriginal  size="40"  /> },
-    { progress: 0.6, isActive: true, skill: "Sql Server",icon: <MicrosoftsqlserverPlainWordmark  size="35"  /> },
-    { progress: 0.6, isActive: true, skill: "Room",icon: <SqliteOriginal  size="40"  /> },
+  const desarrolloLenguajes = [
+    {
+  
+     
+      skill: "JavaScript",
+      icon: <JavascriptOriginal  size="50" />,
+    },
+    {
+     
+     
+      skill: "C#",
+      icon: <CsharpOriginal size="50" />,
+    },
+    {
+     
+     
+      skill: "Kotlin",
+      icon: <KotlinOriginal size="50" />,
+    },
+    {
+     
+      
+      skill: "Java",
+      icon: <JavaOriginal size="50" />,
+    },
+    {
+     
+      
+      skill: "CSS",
+      icon: <Css3Original size="50" />,
+    },
+    {
+     
+      
+      skill: "HTML5",
+      icon: <Html5Original size="50"  />,
+    },
   ];
-
-  const resetProgress = () => {
-    setProgress(0);
-  };
-  const [isVisible, setIsVisible] = useState(true);
-
-  const handleVisibilityChange = (isVisible) => {
-    if (isVisible) {
-      setIsVisible(true);
-    } else if (!isVisible) {
-      setIsVisible(false);
-    }
-  };
+  const frameworks = [
+    {
+  
+     
+      skill: ".NET",
+      icon: <DotnetcoreOriginal  size="50" />,
+    },
+    {
+     
+     
+      skill: "React JS",
+      icon: <ReactOriginal size="50" />,
+    },
+    {
+     
+     
+      skill: "BootStrap",
+      icon: <BootstrapOriginal  size="60" />,
+    },
+    {
+     
+      
+      skill: "Room",
+      icon: <SqliteOriginal size="50" />,
+    },
+    {
+     
+      
+      skill: "JQuery",
+      icon: <JqueryOriginal size="50" />,
+    },
+  ];
+ 
+  
 
   return (
     <section className="skill" id="skills">
       <Container>
-        <Row >
+        <Row>
           <Col>
-            <div className="skill-bx ">
-              <h2  className="text-variant">Habilidades </h2>
-             
-
-              <p >Tecnologías que he utilizado. </p>
-
-              <Row className="d-flex justify-content-center align-items-center  ">
-                {progressBarData.map((data, index) => (
-                  <Col
-                  xs={6} md={4} xl={3}
-                    key={index}
-                    className="  mt-5 mb-3 d-flex justify-content-center align-items-center"
-                  >
-                    <div className="prueba ">
-                      {isVisible && (
-                        <Progress
-                          progress={data.progress}
-                          isActive={data.isActive}
-                        />
-                      )}{" "}
-                      <span>{data.skill} <i>{data.icon}</i></span>
-                     
-
-                     
-                    </div>
-                  </Col>
-                ))}
+            <div className="skill-bx">
+              <h2 className="text-variant">Habilidades </h2>
+              <p>Desarrollo</p>
+              <Row className="d-flex justify-content-center align-items-center">
+              <Slider {...settings}>
+                      {desarrolloLenguajes.map((item, index) => (
+                      <div key={index}>
+                            {item.icon}
+                        <h3>{item.skill}</h3>
+                     </div>
+                       ))}
+               </Slider>
+               <p>Frameworks</p>
+               <Slider {...settings2}>
+                      {frameworks.map((item, index) => (
+                      <div key={index}>
+                            {item.icon}
+                        <h3>{item.skill}</h3>
+                     </div>
+                       ))}
+               </Slider>
               </Row>
+
+              
             </div>
           </Col>
         </Row>
       </Container>
-
-      <img className="background-image-left" src={colorSharp}></img>
+      <img className="background-image-left" src={colorSharp} alt="Color Sharp" />
     </section>
   );
 };

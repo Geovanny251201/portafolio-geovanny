@@ -1044,8 +1044,6 @@ strong {
   height: 100%;
   position: relative ;
   
-  
-  
 }
 .tarjeta {
   width: 300px;
@@ -1054,7 +1052,15 @@ strong {
   background: #212121;
   box-shadow: 15px 15px 30px rgb(25, 25, 25),
               -15px -15px 30px rgb(60, 60, 60);
+              
  }
+ @media (max-width: 1000px) {
+  .tarjeta h6 {
+    font-size: 13px;
+   
+  }
+}
+
  .tarjetaFoto {
   animation: updown 5s linear infinite;
 }
@@ -1120,8 +1126,41 @@ color:gray;
                 -15px -15px 30px rgb(60, 60, 60);
                 
     
-  
+
    }
+}
+@media (max-width: 1000px) {
+  .tarjetaInfo p {
+    font-size: 15px;
+   
+  }
+  .tarjetaFoto {
+    width: 200px;
+    height: 230px;
+    border-radius: 20px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+                
+    
+
+   }
+}
+@media (max-width: 1000px) {
+  .tarjetaInfo p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+  .tarjetaInfo p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1500px) {
+  .tarjetaInfo p {
+    font-size: 12px;
+  }
 }
  .tarjetaInput{
   width: 60%;
