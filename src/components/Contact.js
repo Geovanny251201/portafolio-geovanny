@@ -1,9 +1,32 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import emailjs from 'emailjs-com';
+import { useEffect, useRef } from 'react'
 
 import developerSend from "../assets/img/developerSend.png";
 
 export const Contact = () => {
+  const form = useRef();
+
+  function sendEmail(e) {
+    e.preventDefault();
+    setButtonText("Enviando...");
+    emailjs.sendForm('service_shlgh8p', 'template_t3brvyr', form.current, '7gu0cF8om5IPGL_sC')
+      .then((result) => {
+        console.log(result.text);
+        setButtonText("Enviar");
+      }, (error) => {
+        console.log(error.text);
+      });
+  
+    e.target.reset();
+  }
+  
+
+
+
+
+
   const formInitialDetails = {
     firstName: "",
     lastName: "",
@@ -44,6 +67,7 @@ export const Contact = () => {
 
 }
 
+
   return (
     <section className="contact" id="contact">
       <Container>
@@ -53,7 +77,7 @@ export const Contact = () => {
           </Col>
           <Col md={6}>
             <h2>Contactar</h2>
-            <form onSubmit={handleSubmit}>
+            {/* <form onSubmit={handleSubmit}>
                <Row>
                 <Col sm={6} className="px-1">
                     <input type="text" value={formDetails.firstName} placeholder="Primer Nombre" onChange={(e) => onFormUpdate('firstName', e.target.value)}></input>
@@ -84,7 +108,14 @@ export const Contact = () => {
                </Row>
 
 
-            </form>
+            </form> */}
+            <form ref={form} onSubmit = {sendEmail}>
+          <input type="text" name='name' placeholder='Nombre Completo' required />
+          <input type="text" name='organization' placeholder='Organización' required />
+          <input type="email" name='email' placeholder='Correo Electrónico' required />
+          <textarea name="message" rows="7" placeholder='Mensaje' required></textarea>
+          <button type='submit' className='btn btn-primary'><span>{buttonText}</span></button>
+        </form>
 
           </Col>
         </Row>
