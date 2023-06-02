@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import pokedexCapture from "../assets/img/poke.png";
 import listaTareas from "../assets/img/listaTareas .png";
 import coffeeApp from "../assets/img/coffeeApp.jpg";
+import cargandoProyectos from "../assets/img/cargandoProyectos.png";
 
 
 
@@ -33,17 +34,17 @@ export const Projects = () => {
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: cargandoProyectos,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: cargandoProyectos,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: cargandoProyectos,
     },
   ];
 

@@ -33,7 +33,7 @@ return(
                       
 
                     </div>
-                    <p>CopyRight 2023</p>
+                   
                 </Col>
 
 

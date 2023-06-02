@@ -4,6 +4,9 @@ import emailjs from 'emailjs-com';
 import { useEffect, useRef } from 'react'
 import Swal from 'sweetalert2';
 import '@sweetalert2/theme-dark';
+import React from 'react'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import avatar from "../assets/img/avatar.jpeg";
 
 import developerSend from "../assets/img/developerSend.png";
 
@@ -123,7 +126,8 @@ export const Contact = () => {
           <textarea name="message" rows="7" placeholder='Mensaje' required></textarea>
           <button type='submit'><span>{buttonText}</span></button>
         </form>
-       
+        <FloatingWhatsApp phoneNumber="50660454360" accountName="Geovanny Araya" avatar={avatar} statusMessage="En línea" darkMode="true" allowClickAway="true" allowEsc="true" chatMessage="¡Hola! Soy Geovanny ¿En qué puedo ayudarte?" />
+      
 
           </Col>
         </Row>
