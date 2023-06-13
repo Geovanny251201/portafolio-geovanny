@@ -34,7 +34,7 @@ export const Projects = () => {
     },
     {
       title: "Calculadora",
-      description: "Calculadora",
+      description: "https://geovanny251201.github.io/calculadora-react/",
       imgUrl: calculadora,
     },
     {
