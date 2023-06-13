@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from '../pdfs/cv-geo.pdf'
+import CV from '../pdfs/CV-Geovanny.pdf'
 
 
 export const ButtonPdf = () => {
@@ -13,7 +13,7 @@ export const ButtonPdf = () => {
   return (
     
  <button className='buttonPdf text-white'>
-     <a href={CV} download='CV-Geo' className='btn'> Descargar CV</a>
+     <a href={CV} download='Currículum Geovanny Araya_Desarrollador Web Frontend' className='btn'> Descargar CV</a>
   </button>   
     
     

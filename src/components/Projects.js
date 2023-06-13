@@ -7,6 +7,7 @@ import pokedexCapture from "../assets/img/poke.png";
 import listaTareas from "../assets/img/listaTareas .png";
 import coffeeApp from "../assets/img/coffeeApp.jpg";
 import cargandoProyectos from "../assets/img/cargandoProyectos.png";
+import calculadora from '../assets/img/calculadora1.png'
 
 
 
@@ -27,14 +28,14 @@ export const Projects = () => {
       imgUrl:listaTareas,
     },
     {
-      title: "Lista de Tareas",
-      description: "Design & Development",
+      title: "CoffeeApp",
+      description: "Aplicación Móvil",
       imgUrl: coffeeApp,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: cargandoProyectos,
+      title: "Calculadora",
+      description: "Calculadora",
+      imgUrl: calculadora,
     },
     {
       title: "Business Startup",

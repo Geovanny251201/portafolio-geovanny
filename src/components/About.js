@@ -91,7 +91,7 @@ export const About = () => {
                 </div>
                 <div className="row">
                   <div className="col-12 text-center mt-4">
-                    <h6>2020-Actualidad | Ingeniero en sistemas en<br />Universidad de Costa Rica</h6>
+                    <h6>2020-Actualidad |Informática Empresarial en <br />Universidad de Costa Rica</h6>
                   </div>
                 </div>
               </div>
