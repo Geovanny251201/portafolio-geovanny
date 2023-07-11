@@ -14,6 +14,8 @@ import { DotnetcoreOriginal } from "devicons-react";
 import { SqliteOriginal } from "devicons-react";
 import { JavaOriginal } from 'devicons-react';
 import { JqueryOriginal } from 'devicons-react';
+import { PhpOriginal } from 'devicons-react';
+
 import React from "react";
 import "react-circular-progressbar/dist/styles.css";
 import Slider from 'react-slick';
@@ -101,6 +103,12 @@ export const Skills = () => {
       skill: "HTML5",
       icon: <Html5Original size="50"  />,
     },
+    {
+     
+      
+      skill: "PHP",
+      icon: <PhpOriginal size="50" />,
+    },
   ];
   const frameworks = [
     {
@@ -133,6 +141,7 @@ export const Skills = () => {
       skill: "JQuery",
       icon: <JqueryOriginal size="50" />,
     },
+   
   ];
  
   
