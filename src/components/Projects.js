@@ -7,7 +7,8 @@ import pokedexCapture from "../assets/img/poke.png";
 import listaTareas from "../assets/img/listaTareas .png";
 import coffeeApp from "../assets/img/coffeeApp.jpg";
 import cargandoProyectos from "../assets/img/cargandoProyectos.png";
-import calculadora from '../assets/img/calculadora1.png'
+import calculadora from '../assets/img/calculadoraFix.png'
+import edupro from '../assets/img/EduproFix.png'
 
 
 
@@ -38,15 +39,16 @@ export const Projects = () => {
       imgUrl: calculadora,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: cargandoProyectos,
+      title: "EduPro",
+      description: "https://geovanny251201.github.io/eduPro/",
+      imgUrl: edupro,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: cargandoProyectos,
     },
+    
   ];
 
   return (
